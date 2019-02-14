@@ -1,0 +1,82 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+10
+(
+    inletFace
+    {
+        type            patch;
+        nFaces          22;
+        startFace       407099;
+    }
+    inletWall
+    {
+        type            wall;
+        nFaces          386;
+        startFace       407121;
+    }
+    inletsourceFace
+    {
+        type            patch;
+        nFaces          4246;
+        startFace       407507;
+    }
+    inletdestinationFace
+    {
+        type            patch;
+        nFaces          4246;
+        startFace       411753;
+    }
+    fineMeshWall
+    {
+        type            wall;
+        nFaces          178;
+        startFace       415999;
+    }
+    fineMeshSourceFace
+    {
+        type            patch;
+        nFaces          200000;
+        startFace       416177;
+    }
+    fineMeshdestinationFace
+    {
+        type            patch;
+        nFaces          200000;
+        startFace       616177;
+    }
+    fineMeshSymmetryWall
+    {
+        type            symmetryPlane;
+        nFaces          1000;
+        startFace       816177;
+    }
+    fineMeshOutletLeft
+    {
+        type            patch;
+        nFaces          1000;
+        startFace       817177;
+    }
+    fineMeshOutletBottom
+    {
+        type            patch;
+        nFaces          200;
+        startFace       818177;
+    }
+)
+
+// ************************************************************************* //
