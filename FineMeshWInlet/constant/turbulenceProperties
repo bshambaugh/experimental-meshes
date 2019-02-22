@@ -26,6 +26,19 @@ RAS
     turbulence      on;
 
     printCoeffs     on;
+
+      kEpsilonCoeffs
+   {
+      Cmu             0.09;
+   //   C1              1.44;
+      C1              1.24;
+  //    C2              1.92;
+      C2              2.05;
+      C3              -0.33;
+      sigmak          1;
+      sigmaEps        1.3;
+  }
+
 }
 
 
